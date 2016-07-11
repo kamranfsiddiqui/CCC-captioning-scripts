@@ -3,9 +3,7 @@ from pycaption import SRTReader,DFXPWriter
 import sys, getopt
 
 inputFileName = sys.argv[1]
-outputFileName = ""
 inputFileSplit = inputFileName.split(".")
-outopt = False
 if inputFileSplit[len(inputFileSplit) - 1] != "srt":
     print "InputError: Can only convert *.srt files"
     sys.exit()
